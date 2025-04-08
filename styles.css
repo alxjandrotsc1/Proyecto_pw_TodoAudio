@@ -1,0 +1,161 @@
+/* Estilo general */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Fondo específico para cada página */
+body.index {
+    background-image: url('fondo-eventos-Web-1500_1500x1000.jpg');
+}
+
+body.acerca {
+    background-image: url('fondo.jpg');
+}
+
+body.ayuda {
+    background-image: url('Rodeo-Garth-Brooks-river-1024x768.jpg');
+}
+
+body.blog {
+    background-image: url('maxresdefault.jpg');
+}
+
+body.contacto {
+    background-image: url('contactanos.jpg');
+}
+
+body.galeria {
+    background-image: url('shutterstock_760614946.jpg');
+}
+
+body.programas {
+    background-image: url('ss.jpg');
+}
+
+/* Encabezado */
+header {
+    background-color: rgba(255, 255, 255, 0.8);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+header .logo h1 {
+    margin: 0;
+    font-size: 24px;
+    color: #3393ff;
+}
+
+/* Menú de navegación */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #3393ff;
+    color: white;
+}
+
+/* Sección principal */
+main {
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    margin: 20px auto;
+    max-width: 800px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Asegurar que las imágenes no se salgan del cuadro blanco */
+main img {
+    max-width: 100%; /* Imagen no puede ser más grande que su contenedor */
+    height: auto; /* Mantiene las proporciones */
+    display: block;
+    margin: 10px auto; /* Centra la imagen */
+    border-radius: 10px;
+    border: 3px solid #3393ff
+}
+
+/* Pie de página */
+footer {
+    margin-top: auto;
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 10px 20px;
+    font-size: 14px;
+    color: #333;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+}
+
+section {
+    background-color: rgba(255, 255, 255, 0.9); /* Fondo blanco con algo de transparencia */
+    border-radius: 10px; /* Bordes redondeados */
+    padding: 20px; /* Espaciado interno */
+    margin-bottom: 20px; /* Espaciado entre los cuadros */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra sutil para darle profundidad */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animaciones suaves para interacciones */
+}
+
+section:hover {
+    transform: scale(1.02); /* Escala ligeramente el cuadro cuando el cursor pasa por encima */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* Aumenta la sombra al pasar el mouse */
+}
+
+section h3 {
+    font-size: 24px; 
+    color: 000307; 
+    margin-bottom: 10px; 
+}
+
+section p {
+    font-size: 16px; 
+    color: #555; 
+    line-height: 1.6; 
+}
+
+section img {
+    max-width: 100%; 
+    height: auto; 
+    border-radius: 10px; 
+    margin-top: 10px;
+}
+
+ul.lista-eventos li, ul.lista-preguntas li {
+    font-size: 16px;
+    color: #333;
+    margin: 10px 0;
+}
+
+ul.lista-eventos li strong, ul.lista-preguntas li strong {
+    color: #3393ff; 
+}
+
+ul.lista-preguntas li:hover {
+    color: #3393ff; 
+}
